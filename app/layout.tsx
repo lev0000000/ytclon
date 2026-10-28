@@ -4,6 +4,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils";
 import Header from "@/components/shared/Header";
+import { Sidebar } from "@/components/shared/Sidebar";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'})
 
@@ -25,6 +26,7 @@ export default function RootLayout({
     >
       <body>
         <Header />
+        <Sidebar/>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

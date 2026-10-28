@@ -11,3 +11,9 @@ export interface Component {
     className?:string
     children?: React.ReactNode
 }
+
+export interface MenuItem {
+    id: number;
+    title: string;
+    href: string;
+}
